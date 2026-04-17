@@ -3,77 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <title>Дополнительно</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body background="images/old_map_texture.jpg">
-    <h2 align="center"><font color="#003366">Дополнительно: Год дружбы народов России</font></h2>
+<body>
+    <h2 class="events-title"><i class="fa-solid fa-circle-info title-icon"></i>Дополнительно: Год дружбы народов России</h2>
+    <div class="moving-badge">Единство народов - сила России</div>
 
-    <h3 id="facts"><u>Многоуровневый список фактов</u></h3>
-    <ol>
-        <li>Культурное многообразие
-            <ul>
-                <li>&#10022; В России проживают представители более 190 народов.</li>
-                <li>&#10022; Региональные фестивали знакомят жителей с традициями соседних народов.</li>
-            </ul>
-        </li>
-        <li>Традиции и быт
-            <ul>
-                <li><img src="images/red_circle.png" width="10" alt=""> Народные ремесла сохраняются через мастер-классы и музеи.</li>
-                <li><img src="images/red_circle.png" width="10" alt=""> Национальные кухни становятся частью гастрономических праздников.</li>
-                <li><img src="images/red_circle.png" width="10" alt=""> Музыкальные и танцевальные традиции передаются между поколениями.</li>
-            </ul>
-        </li>
-        <li>Современные инициативы
-            <ol>
-                <li>Образовательные программы по межкультурному диалогу.</li>
-                <li>Грантовая поддержка языковых и фольклорных проектов.</li>
-                <li>Цифровые архивы этнографических материалов.</li>
+    <div class="events-grid">
+        <section class="panel" id="facts">
+            <h3>Многоуровневый список фактов</h3>
+            <ol class="facts-list">
+                <li>Культурное многообразие
+                    <ul>
+                        <li>&#10022; В России проживают представители более 190 народов.</li>
+                        <li>&#10022; Региональные фестивали знакомят жителей с традициями соседних народов.</li>
+                    </ul>
+                </li>
+                <li>Традиции и быт
+                    <ul>
+                        <li><img src="images/red_circle.png" width="10" alt=""> Народные ремесла сохраняются через мастер-классы и музеи.</li>
+                        <li><img src="images/red_circle.png" width="10" alt=""> Национальные кухни становятся частью гастрономических праздников.</li>
+                        <li><img src="images/red_circle.png" width="10" alt=""> Музыкальные и танцевальные традиции передаются между поколениями.</li>
+                    </ul>
+                </li>
+                <li>Современные инициативы
+                    <ol>
+                        <li>Образовательные программы по межкультурному диалогу.</li>
+                        <li>Грантовая поддержка языковых и фольклорных проектов.</li>
+                        <li>Цифровые архивы этнографических материалов.</li>
+                    </ol>
+                </li>
             </ol>
-        </li>
-    </ol>
+            <p>Наведите на слово <span class="tooltip" data-tip="оригинальная всплывающая подсказка CSS.">подсказка</span>.</p>
+        </section>
 
-    <h3 id="map"><u>Карта-изображение (клиентская)</u></h3>
-    <p>Нажмите на выделенные области карты или используйте альтернативные ссылки ниже.</p>
-    <p align="center">
-        <img src="images/map_russia_regions.png" width="900" usemap="#regions" alt="Карта регионов России">
-    </p>
-    <map name="regions">
-        <area shape="rect" coords="80,180,280,340" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D0%B5%D0%BB%D1%8B" target="_blank" alt="Карелы">
-        <area shape="rect" coords="390,170,590,340" href="https://ru.wikipedia.org/wiki/%D0%A5%D0%B0%D0%BD%D1%82%D1%8B" target="_blank" alt="Ханты">
-        <area shape="rect" coords="710,220,960,430" href="https://ru.wikipedia.org/wiki/%D0%AD%D0%B2%D0%B5%D0%BD%D0%BA%D0%B8" target="_blank" alt="Эвенки">
-    </map>
-    <p>
-        Обычные ссылки:
-        <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D0%B5%D0%BB%D1%8B" target="_blank">Карелы</a> |
-        <a href="https://ru.wikipedia.org/wiki/%D0%A5%D0%B0%D0%BD%D1%82%D1%8B" target="_blank">Ханты</a> |
-        <a href="https://ru.wikipedia.org/wiki/%D0%AD%D0%B2%D0%B5%D0%BD%D0%BA%D0%B8" target="_blank">Эвенки</a>
-    </p>
+        <section class="panel" id="map">
+            <h3>Карта-изображение</h3>
+            <p>Нажмите на выделенные области карты или используйте обычные ссылки.</p>
+            <p class="map-box">
+                <img src="images/map_russia_regions.png" usemap="#regions" alt="Карта регионов России">
+            </p>
+            <map name="regions">
+                <area shape="rect" coords="80,180,280,340" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D0%B5%D0%BB%D1%8B" target="_blank" alt="Карелы">
+                <area shape="rect" coords="390,170,590,340" href="https://ru.wikipedia.org/wiki/%D0%A5%D0%B0%D0%BD%D1%82%D1%8B" target="_blank" alt="Ханты">
+                <area shape="rect" coords="710,220,960,430" href="https://ru.wikipedia.org/wiki/%D0%AD%D0%B2%D0%B5%D0%BD%D0%BA%D0%B8" target="_blank" alt="Эвенки">
+            </map>
+            <p class="plain-links">
+                <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D0%B5%D0%BB%D1%8B" target="_blank">Карелы</a>
+                <a href="https://ru.wikipedia.org/wiki/%D0%A5%D0%B0%D0%BD%D1%82%D1%8B" target="_blank">Ханты</a>
+                <a href="https://ru.wikipedia.org/wiki/%D0%AD%D0%B2%D0%B5%D0%BD%D0%BA%D0%B8" target="_blank">Эвенки</a>
+            </p>
+        </section>
 
-    <h3 id="table"><u>Таблица (align/valign/cellpadding/bgcolor)</u></h3>
-    <table border="1" width="100%" cellpadding="8" cellspacing="0">
-        <tr bgcolor="#cfe8ff">
-            <th align="center" valign="middle">Народ</th>
-            <th align="left" valign="middle">Регион проживания</th>
-            <th align="right" valign="middle">Культурный вклад</th>
-        </tr>
-        <tr bgcolor="#f7fbff">
-            <td align="center" valign="top">Татары</td>
-            <td align="left" valign="middle">Поволжье</td>
-            <td align="right" valign="bottom">Языковое и музыкальное наследие</td>
-        </tr>
-        <tr bgcolor="#eef7ff">
-            <td align="center" valign="top">Чуваши</td>
-            <td align="left" valign="middle">Чувашская Республика</td>
-            <td align="right" valign="bottom">Фольклор и орнаментальная традиция</td>
-        </tr>
-        <tr bgcolor="#f7fbff">
-            <td align="center" valign="top">Башкиры</td>
-            <td align="left" valign="middle">Башкортостан</td>
-            <td align="right" valign="bottom">Эпос, ремесла и коневодство</td>
-        </tr>
-    </table>
+        <section class="panel" id="table">
+            <h3>Таблица народов России</h3>
+            <table class="styled-table">
+                <tr>
+                    <th align="center" valign="middle">Народ</th>
+                    <th align="left" valign="middle">Регион проживания</th>
+                    <th align="right" valign="middle">Культурный вклад</th>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">Татары</td>
+                    <td align="left" valign="middle">Поволжье</td>
+                    <td align="right" valign="bottom">Языковое и музыкальное наследие</td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">Чуваши</td>
+                    <td align="left" valign="middle">Чувашская Республика</td>
+                    <td align="right" valign="bottom">Фольклор и орнаментальная традиция</td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">Башкиры</td>
+                    <td align="left" valign="middle">Башкортостан</td>
+                    <td align="right" valign="bottom">Эпос, ремесла и коневодство</td>
+                </tr>
+            </table>
+        </section>
+    </div>
 
     <hr>
-    <p align="center">
+    <p class="nav-links">
         <a href="about.html" target="fr2">Назад</a> |
         <a href="index.html" target="_top">На главную</a> |
         <a href="galer.html" target="fr2">Вперед</a>

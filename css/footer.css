@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    background: linear-gradient(90deg, #d8e9ff, #f6fbff 45%, #d8e9ff);
+}
+
+.footer-wrap {
+    padding: 10px 16px;
+    text-align: center;
+}
+
+.footer-wrap strong {
+    color: #003366;
+}
+
+.ticker {
+    margin-top: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.ticker span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: ticker-move 12s linear infinite;
+}
+
+@keyframes ticker-move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
